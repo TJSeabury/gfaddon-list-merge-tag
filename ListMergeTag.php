@@ -20,14 +20,14 @@ class ListMergeTag extends GFAddOnAbstractSingleton {
 	protected $_title = 'Gravity Forms Add-On List Merge Tag';
 	protected $_short_title = 'List Merge Tag';
 
-	/**
-	 * Handles hooks and loading of language files.
-	 */
-	public function init() {
+    /**
+     * Handles hooks and loading of language files.
+     */
+    public function init() {
         parent::init();
         add_filter( 'gform_custom_merge_tags', [ $this, 'add_list_column_merge_tag' ], 10, 4 );
         add_filter( 'gform_merge_tag_filter', [ $this, 'replace_list_column_merge_tag' ], 10, 5 );
-	}
+    }
 
 
     public function add_list_column_merge_tag( $merge_tags, $form_id, $fields, $element_id ) {
