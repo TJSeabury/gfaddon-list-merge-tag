@@ -6,7 +6,6 @@ use \GFCommon;
 use \GFForms;
 use function \rgars;
 use function \rgar;
-use \tjseabury\gfaddon\lmt\GFAddOnAbstractSingleton;
 
 GFForms::include_addon_framework();
 

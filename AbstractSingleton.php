@@ -1,12 +1,10 @@
 <?php namespace tjseabury\gfaddon\lmt;
 
-use \GFAddOn;
-
 /**
  * @see: https://stackoverflow.com/questions/1818765/extend-abstract-singleton-class
  */
-abstract class GFAddOnAbstractSingleton extends GFAddOn {
-    private static $_instances = array();
+trait AbstractSingleton {
+    protected static $_instances = array();
 
     public static function getInstance() {
         $class = get_called_class();
