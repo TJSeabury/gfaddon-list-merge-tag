@@ -24,10 +24,7 @@ class ListMergeTag extends GFAddOnAbstractSingleton {
 	 * Handles hooks and loading of language files.
 	 */
 	public function init() {
-		parent::init();
-		add_filter( 'gform_submit_button', array( $this, 'form_submit_button' ), 10, 2 );
-		add_action( 'gform_after_submission', array( $this, 'after_submission' ), 10, 2 );
-
+        parent::init();
         add_filter( 'gform_custom_merge_tags', [ $this, 'add_list_column_merge_tag' ], 10, 4 );
         add_filter( 'gform_merge_tag_filter', [ $this, 'replace_list_column_merge_tag' ], 10, 5 );
 	}
