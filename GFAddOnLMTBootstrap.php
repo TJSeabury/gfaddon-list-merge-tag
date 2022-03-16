@@ -31,7 +31,7 @@ use function \add_action;
 use \GFAddOn;
 use \tjseabury\gfaddon\lmt\ListMergeTag;
 
-define( 'TS_GF_ListMergeTag_VERSION', '0.1.0' );
+define( 'GFAddOn_ListMergeTag_VERSION', '0.1.0' );
 
 add_action( 'gform_loaded', array( 'GFAddOnLMTBootstrap', 'load' ), 5 );
 

@@ -12,13 +12,13 @@ GFForms::include_addon_framework();
 
 class ListMergeTag extends GFAddOnAbstractSingleton {
 
-	protected $_version = TS_GF_ListMergeTag_VERSION;
+	protected $_version = GFAddOn_ListMergeTag_VERSION;
 	protected $_min_gravityforms_version = '1.9';
-	protected $_slug = 'TS_GF_ListMergeTag';
-	protected $_path = 'simpleaddon/simpleaddon.php';
+	protected $_slug = 'GFAddOn_ListMergeTag';
+	protected $_path = 'gfaddon-list-merge-tag/ListMergeTag.php';
 	protected $_full_path = __FILE__;
-	protected $_title = 'Gravity Forms Simple Add-On';
-	protected $_short_title = 'Simple Add-On';
+	protected $_title = 'Gravity Forms Add-On List Merge Tag';
+	protected $_short_title = 'List Merge Tag';
 
 	/**
 	 * Handles hooks and loading of language files.
