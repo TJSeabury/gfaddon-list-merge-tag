@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Tyler\\MmGfaddonListMergeTag\\' => array($baseDir . '/src'),
+    'tjseabury\\gfaddon\\lmt\\' => array($baseDir . '/'),
 );

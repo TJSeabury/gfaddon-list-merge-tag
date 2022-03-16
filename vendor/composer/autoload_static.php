@@ -7,16 +7,16 @@ namespace Composer\Autoload;
 class ComposerStaticInit56ae98e7ae23105f16e62f1373ab59be
 {
     public static $prefixLengthsPsr4 = array (
-        'T' => 
+        't' => 
         array (
-            'Tyler\\MmGfaddonListMergeTag\\' => 28,
+            'tjseabury\\gfaddon\\lmt\\' => 22,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Tyler\\MmGfaddonListMergeTag\\' => 
+        'tjseabury\\gfaddon\\lmt\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/',
         ),
     );
 

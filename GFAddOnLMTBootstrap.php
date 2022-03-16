@@ -29,11 +29,17 @@ require_once realpath( __DIR__ . '/vendor/autoload.php' );
 
 use function \add_action;
 use \GFAddOn;
-use \tjseabury\gfaddon\lmt\ListMergeTag;
 
 define( 'GFAddOn_ListMergeTag_VERSION', '0.1.0' );
 
-add_action( 'gform_loaded', array( 'GFAddOnLMTBootstrap', 'load' ), 5 );
+add_action(
+    'gform_loaded',
+    [
+        __NAMESPACE__ . '\\GFAddOnLMTBootstrap',
+        'load'
+    ],
+    5
+);
 
 class GFAddOnLMTBootstrap {
 
@@ -43,7 +49,11 @@ class GFAddOnLMTBootstrap {
             return;
         }
 
-        GFAddOn::register( ListMergeTag::getInstance() );
+        $instance = \tjseabury\gfaddon\lmt\ListMergeTag::getInstance();
+
+        var_dump( $instance );
+
+        GFAddOn::register( $instance );
     }
 
 }
