@@ -1,7 +1,7 @@
 <?php namespace tjseabury\gfaddon\lmt;
 
 /*
-Plugin Name: Gravity Forms List Merge Tag Columns
+Plugin Name: Gravity Forms List Merge Tag
 Plugin URI: 
 Description: A simple add-on to add selectable columns to list merge tags.
 Version: 0.1.0
@@ -33,9 +33,9 @@ use \tjseabury\gfaddon\lmt\ListMergeTag;
 
 define( 'TS_GF_ListMergeTag_VERSION', '0.1.0' );
 
-add_action( 'gform_loaded', array( 'GF_Simple_AddOn_Bootstrap', 'load' ), 5 );
+add_action( 'gform_loaded', array( 'GFAddOnLMTBootstrap', 'load' ), 5 );
 
-class GF_AddOn_Bootstrap {
+class GFAddOnLMTBootstrap {
 
     public static function load() {
 
