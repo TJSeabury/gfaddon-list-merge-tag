@@ -1,0 +1,15 @@
+{
+    "name": "tjseabury/gfaddon-list-merge-tag",
+    "autoload": {
+        "psr-4": {
+            "tjseabury\\gfaddon\\lmt\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Tyler Seabury",
+            "email": "tylerseabury@protonmail.com"
+        }
+    ],
+    "require": {}
+}
