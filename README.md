@@ -7,6 +7,7 @@ Using this add-on makes it possible to select individual List Field column value
 {<descriptor>:<field_id>:<modifier>}
 val1,val2,val3
 ```
+See: https://docs.gravityforms.com/field-merge-tags/
 
 ## New Behavior
 ```
@@ -14,5 +15,3 @@ val1,val2,val3
 val1
 ```
 Applies only to List Field merge tags.
-
-See: https://docs.gravityforms.com/field-merge-tags/
